@@ -242,3 +242,63 @@ body {
         display: block;
     }
 }
+
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .left-column {
+        width: 100%;
+        height: auto;
+        position: static;
+        padding-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .left-column h1 {
+        font-size: 32px;
+    }
+
+    .left-column h3 {
+        margin-bottom: 10px;
+    }
+
+    .social-media-icons {
+        margin-bottom: 20px;
+    }
+
+    .right-column {
+        width: 100%;
+    }
+
+    .right-column h2 {
+        font-size: 24px;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        backdrop-filter: blur(5px); /* Adjust the blur amount as needed */
+    }
+
+    .right-column section {
+        margin-bottom: 50px;
+        padding-top: 30px; /* Add padding to all sections */
+    }
+
+    .left-column, .right-column {
+        padding: 0 16px;
+    }
+
+    .headshot {
+        float: none;
+        margin: 0 auto 20px;
+        width: 150px;
+        display: block;
+    }
+}
